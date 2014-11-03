@@ -1,0 +1,49 @@
+object frmLockScreen: TfrmLockScreen
+  Left = 248
+  Height = 448
+  Top = 155
+  Width = 878
+  BorderStyle = bsNone
+  Caption = 'frmLockScreen'
+  ClientHeight = 448
+  ClientWidth = 878
+  Color = 4210752
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.2.4.0'
+  WindowState = wsFullScreen
+  object Panel1: TPanel
+    Left = 0
+    Height = 448
+    Top = 0
+    Width = 878
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    ClientHeight = 448
+    ClientWidth = 878
+    Font.Color = clWhite
+    Font.Height = -53
+    Font.Quality = fqCleartypeNatural
+    ParentFont = False
+    TabOrder = 0
+    object Button1: TButton
+      Left = 179
+      Height = 25
+      Top = 100
+      Width = 75
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 0
+      Visible = False
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = Timer1Timer
+    left = 122
+    top = 154
+  end
+end

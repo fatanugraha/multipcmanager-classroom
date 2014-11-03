@@ -1,0 +1,152 @@
+object frmScanNetwork: TfrmScanNetwork
+  Left = 483
+  Height = 432
+  Top = 224
+  Width = 738
+  BorderStyle = bsNone
+  Caption = 'frmScanNetwork'
+  ClientHeight = 432
+  ClientWidth = 738
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object pnlScanner: TPanel
+    Left = 0
+    Height = 432
+    Top = 0
+    Width = 738
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 432
+    ClientWidth = 738
+    Color = 5197647
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object btnConnectServer: TButton
+      Left = 598
+      Height = 25
+      Top = 387
+      Width = 115
+      Anchors = [akRight, akBottom]
+      Caption = 'Ikuti Kelas'
+      Font.Color = clBlack
+      OnClick = btnConnectServerClick
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object Header: TPanel
+      Left = 0
+      Height = 96
+      Top = 0
+      Width = 738
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 96
+      ClientWidth = 738
+      Color = 4210752
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 23
+        Height = 32
+        Top = 31
+        Width = 125
+        Caption = 'Ikuti Kelas'
+        Font.Color = clWhite
+        Font.Height = -27
+        Font.Quality = fqCleartype
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object Label2: TLabel
+      Left = 25
+      Height = 17
+      Top = 120
+      Width = 282
+      Caption = 'Daftar kelas yang ada dalam jaringan anda'
+      ParentColor = False
+    end
+    object lvList: TListView
+      Left = 25
+      Height = 235
+      Top = 144
+      Width = 688
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoWidthLastColumn = True
+      Columns = <      
+        item
+          Caption = 'No.'
+          Width = 40
+        end      
+        item
+          Caption = 'Nama Kelas'
+          Width = 240
+        end      
+        item
+          Caption = 'Nama Pelajaran'
+          Width = 150
+        end      
+        item
+          Caption = 'Nama Pengajar'
+          Width = 150
+        end      
+        item
+          Caption = 'Diproteksi'
+          Width = 106
+        end>
+      Font.Color = clBlack
+      ParentFont = False
+      ReadOnly = True
+      RowSelect = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 1
+      ViewStyle = vsReport
+      OnClick = lvListClick
+      OnSelectItem = lvListSelectItem
+    end
+    object Button2: TButton
+      Left = 128
+      Height = 25
+      Top = 387
+      Width = 96
+      Anchors = [akRight, akBottom]
+      Caption = 'Pindai Ulang'
+      Font.Color = clBlack
+      OnClick = Button2Click
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Button1: TButton
+      Left = 25
+      Height = 25
+      Top = 387
+      Width = 95
+      Anchors = [akLeft, akBottom]
+      Caption = 'Tutup'
+      Font.Color = clBlack
+      OnClick = Button1Click
+      ParentFont = False
+      TabOrder = 4
+    end
+  end
+  object Server: TIdUDPServer
+    BroadcastEnabled = True
+    Bindings = <    
+      item
+        IP = '0.0.0.0'
+        Port = 59004
+      end>
+    DefaultPort = 59004
+    ThreadedEvent = True
+    OnUDPRead = ServerUDPRead
+    left = 588
+    top = 44
+  end
+end

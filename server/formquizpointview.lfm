@@ -1,0 +1,163 @@
+object frmQuizPointView: TfrmQuizPointView
+  Left = 436
+  Height = 321
+  Top = 249
+  Width = 664
+  Caption = 'frmQuizPointView'
+  ClientHeight = 321
+  ClientWidth = 664
+  Color = 5197647
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object ComboBox1: TComboBox
+    Left = 87
+    Height = 23
+    Top = 17
+    Width = 484
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 15
+    OnSelect = ComboBox1Select
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 21
+    Width = 59
+    Caption = 'Nama Quiz'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 279
+    Top = 42
+    Width = 664
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 279
+    ClientWidth = 664
+    TabOrder = 1
+    object lv: TListView
+      Left = 16
+      Height = 197
+      Top = 40
+      Width = 632
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoWidthLastColumn = True
+      Columns = <      
+        item
+          Caption = 'No.'
+        end      
+        item
+          Caption = 'Nama'
+          Width = 200
+        end      
+        item
+          Caption = 'Poin Soal Pilihan'
+          Width = 100
+        end      
+        item
+          Caption = 'Point Soal Esai'
+          Width = 100
+        end      
+        item
+          Caption = 'Total Nilai'
+          Width = 178
+        end>
+      ReadOnly = True
+      RowSelect = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+      ViewStyle = vsReport
+      OnClick = lvClick
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 15
+      Top = 16
+      Width = 78
+      Caption = 'Total Submisi: '
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object Button1: TButton
+      Left = 512
+      Height = 25
+      Top = 244
+      Width = 136
+      Anchors = [akRight, akBottom]
+      Caption = 'Ekspor ke Spreadsheet'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object pnlCover: TPanel
+      Left = 8
+      Height = 50
+      Top = 272
+      Width = 1
+      BevelOuter = bvNone
+      Caption = 'pnlCover'
+      Font.Color = clWhite
+      Font.Height = -16
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object Label3: TLabel
+      Left = 561
+      Height = 15
+      Top = 16
+      Width = 87
+      Alignment = taRightJustify
+      Anchors = [akTop, akRight]
+      Caption = 'Nilai Maximum: '
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object btnQuizMod: TButton
+      Left = 312
+      Height = 25
+      Top = 244
+      Width = 192
+      Anchors = [akRight, akBottom]
+      Caption = 'Koreksi Jawaban Essay ...'
+      OnClick = btnQuizModClick
+      TabOrder = 3
+      Visible = False
+    end
+    object Button3: TButton
+      Left = 16
+      Height = 25
+      Top = 244
+      Width = 120
+      Anchors = [akLeft, akBottom]
+      Caption = 'Lihat Jawaban'
+      OnClick = Button3Click
+      TabOrder = 4
+      Visible = False
+    end
+  end
+  object Button2: TButton
+    Left = 576
+    Height = 25
+    Top = 16
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = 'Tutup'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object dlg: TSaveDialog
+    DefaultExt = '.*.csv'
+    Filter = 'Comma Separated Values File|*.csv'
+    left = 90
+    top = 17
+  end
+end

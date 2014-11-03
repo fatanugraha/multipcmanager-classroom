@@ -1,0 +1,50 @@
+object frmSettings: TfrmSettings
+  Left = 146
+  Height = 241
+  Top = 379
+  Width = 577
+  Caption = 'frmSettings'
+  ClientHeight = 241
+  ClientWidth = 577
+  Color = 5197647
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 116
+    Height = 15
+    Top = 64
+    Width = 84
+    Caption = 'Nama Pengajar:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 208
+    Height = 23
+    Top = 61
+    Width = 264
+    OnChange = Edit1Change
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 397
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Simpan'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 320
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Tutup'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end

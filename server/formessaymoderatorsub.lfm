@@ -1,0 +1,119 @@
+object frmEssayModeratorSub: TfrmEssayModeratorSub
+  Left = 422
+  Height = 400
+  Top = 276
+  Width = 629
+  Caption = 'frmEssayModeratorSub'
+  ClientHeight = 400
+  ClientWidth = 629
+  Color = 5197647
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object ComboBox1: TComboBox
+    Left = 131
+    Height = 23
+    Top = 17
+    Width = 262
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 15
+    OnSelect = ComboBox1Select
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 21
+    Width = 103
+    Caption = 'Nama Peserta Didik'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button2: TButton
+    Left = 537
+    Height = 25
+    Top = 16
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = 'Tutup'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 352
+    Top = 48
+    Width = 629
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 352
+    ClientWidth = 629
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 16
+      Height = 1
+      Top = 16
+      Width = 1
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object pnlCover: TPanel
+      Left = 8
+      Height = 50
+      Top = 272
+      Width = 0
+      BevelOuter = bvNone
+      Caption = 'pnlCover'
+      Font.Color = clWhite
+      Font.Height = -16
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+    end
+    object ScrollBox1: TScrollBox
+      Left = 0
+      Height = 352
+      Top = 0
+      Width = 629
+      HorzScrollBar.Page = 1
+      VertScrollBar.Page = 1
+      Align = alClient
+      BorderStyle = bsNone
+      TabOrder = 1
+    end
+  end
+  object Button1: TButton
+    Left = 464
+    Height = 25
+    Top = 16
+    Width = 67
+    Anchors = [akTop, akRight]
+    Caption = 'Simpan'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 398
+    Height = 25
+    Top = 16
+    Width = 31
+    Anchors = [akTop, akRight]
+    Caption = '<'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 431
+    Height = 25
+    Top = 16
+    Width = 31
+    Anchors = [akTop, akRight]
+    Caption = '>'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+end

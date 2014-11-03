@@ -1,0 +1,25 @@
+object frmQuizPreview: TfrmQuizPreview
+  Left = 346
+  Height = 480
+  Top = 189
+  Width = 869
+  Caption = 'frmQuizPreview'
+  ClientHeight = 480
+  ClientWidth = 869
+  Color = 5197647
+  OnClose = FormClose
+  LCLVersion = '1.2.4.0'
+  WindowState = wsMaximized
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 869
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alClient
+    BorderStyle = bsNone
+    TabOrder = 0
+    OnClick = ScrollBox1Click
+  end
+end

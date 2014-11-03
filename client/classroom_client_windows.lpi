@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="classroom_client"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <ExecutionLevel Value="2"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <MajorVersionNr Value="2"/>
+      <BuildNr Value="2"/>
+      <StringTable CompanyName="Cybz Lab Software Inc." FileDescription="MultiPC Manager 2.0 Classroom Client" InternalName="mpcm2.0crcl" ProductName="MultiPC Manager 2.0 Classroom Client" ProductVersion="2.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="D:\projects\__published\mpcm_classroom_client"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="uniqueinstance_package"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="indylaz"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="25">
+      <Unit0>
+        <Filename Value="classroom_client.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="classroom_client"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="formmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formMain"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unitglobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitglobal"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="unitdatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitdatabase"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="unitreporter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitReporter"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="unitthreadsync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitthreadsync"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="formpreferences.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmpreferences"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formpreferences"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="unitsendmessage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitsendmessage"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="formscannetwork.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmScanNetwork"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formScanNetwork"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="formworksdetail.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmworksdetail"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formworksdetail"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="unitassignuploader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitassignuploader"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="unitquizdownloader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitquizDownloader"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="unitdebug.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitdebug"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\classroom.server\unitquizfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitquizfile"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\classroom.server\unitquizmaker.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitquizmaker"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\classroom.server\unitquizpreview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitquizpreview"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="formquizviewer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmQuizPreview"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formquizviewer"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="unitansweruploader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitansweruploader"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="formlockscreen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLockScreen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormLockScreen"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="formvote.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVote"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormVote"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\classroom.server\formabout.lfm"/>
+        <IsPartOfProject Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\classroom.server\formabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormAbout"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="unitlanguage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitlanguage"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="unitupdater.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitupdater"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="formupdater.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmUpdater"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formupdater"/>
+      </Unit24>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="D:\projects\__built-app-quarantine\classroom.client\client"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="C:\lazarus\components\indylaz\Lib\Core\;C:\lazarus\components\indylaz\Lib\Protocols\;C:\lazarus\components\indylaz\Lib\system\;..\classroom.server"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <MsgFileName Value=""/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

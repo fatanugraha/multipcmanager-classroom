@@ -1,0 +1,54 @@
+LazarusResources.Add('en_lang_resource','',[
+  'Close'#13#10'Try Again'#13#10'Error'#13#10'Warning'#13#10'Information'#13#10
+  +'Start'#13#10'New Message'#13#10'Status'#13#10'minute(s)'#13#10'press enter '
+  +'to send the message to teacher.'#13#10'Define User Name'#13#10'Preferences'
+  +#13#10'Confirmation'#13#10'Sending quiz answers ...'#13#10'Preparing User In'
+  +'terface ...'#13#10'Uploading file ...'#13#10'Downloading file ...'#13#10'Lo'
+  +'ading ...'#13#10'Error occured while sending quiz answers. Make sure you''r'
+  +'e connected.'#13#10'Error occured while sending file. Make sure you''re con'
+  +'nected.'#13#10'Error occured while downloading quiz file. Make sure you''re'
+  +' connected.'#13#10'Error occured while sending message to teacher. Make sur'
+  +'e you''re connected.'#13#10'Error occured while sending your vote data. Mak'
+  +'e sure you''re connected.'#13#10'Error occured while contacting server. Mak'
+  +'e sure you''re connected.'#13#10'You have %d quiz to be done'#13#10'You hav'
+  +'e %d assignment to be done.'#13#10'Accepted file specification type is %d w'
+  +'ith %d MB maximum file size.'#13#10'File downloaded. Maximum duration to do'
+  +' this quiz is %d minute(s).'#13#10'%d quiz unfinished.'#13#10'%d assignment'
+  +' undone.'#13#10'You:'#13#10'Teacher:'#13#10'Accepted file type:'#13#10'Maxi'
+  +'mum duration:'#13#10'This following question are haven''t answered yet:'#13
+  +#10'Have you done answering this quiz and wish to submit your result?'#13#10
+  +'Please pay attention to your teacher.'#13#10'Your quiz answers was submitte'
+  +'d.'#13#10'All question have answered.'#13#10'You got new message from your '
+  +'teacher.'#13#10'You got new message from your teacher.'#13#10'There is no i'
+  +'mportant notification.'#13#10'Insert password which given by the teacher of'
+  +' this classroom.'#13#10'Your password for this classroom is wrong.'#13#10'Y'
+  +'ou didn''t join any network.'
+]);
+LazarusResources.Add('id_lang_resource','',[
+  'Tutup'#13#10'Coba Lagi'#13#10'Kesalahan'#13#10'Peringatan'#13#10'Informasi'
+  +#13#10'Mulai Pengerjaan'#13#10'Pesan Baru'#13#10'Status'#13#10'menit'#13#10
+  +'tekan enter untuk mengirim pesan ke pengajar'#13#10'Tentukan Nama Pengguna'
+  +#13#10'Pengaturan'#13#10'Konfirmasi'#13#10'Sedang mengirim jawaban kuiz ...'
+  +#13#10'Sedang mempersiapkan tampilan ...'#13#10'Sedang mengunggah berkas ...'
+  +#13#10'Sedang mengunduh berkas kuis ...'#13#10'Sedang memuat ...'#13#10'Terd'
+  +'apat kesalahan saat mengirim jawaban kuis. Pastikan sambungan anda.'#13#10
+  +'Terdapat kesalahan saat mengirim berkas. Pastikan sambungan anda.'#13#10'Te'
+  +'rdapat kesalahan saat mengunduh berkas kuis. Pastikan sambungan anda.'#13#10
+  +'Terdapat kesalahan saat mengirim pesan ke pengajar. Pastikan sambungan anda'
+  +'.'#13#10'Terdapat kesalahan saat mengirim hasil jajak pendapat. Pastikan sa'
+  +'mbungan anda.'#13#10'Terdapat kesalahan saat mengontak server kelas. Pastik'
+  +'an sambungan anda.'#13#10'Anda memiliki %d kuis untuk dikerjakan.'#13#10'An'
+  +'da memiliki %d tugas untuk dikumpulkan.'#13#10'Spesifikasi berkas yang dite'
+  +'rima berekstensi %d dengan ukuran maksimum %d MB.'#13#10'Berkas telah diund'
+  +'uh. Waktu maksimal pengerjaan adalah %d menit.'#13#10'%d kuis belum dikerja'
+  +'kan.'#13#10'%d tugas belum dikumpulkan.'#13#10'Anda:'#13#10'Pengajar:'#13#10
+  +'Tipe berkas yang diterima:'#13#10'Durasi pengerjaan maksimal:'#13#10'Nomor '
+  +'berikut masih kosong:'#13#10'Apakah anda sudah selesai dan ingin mengumpulk'
+  +'an hasil kuis?'#13#10'Harap perhatikan pengajar anda.'#13#10'Jawaban kuis t'
+  +'elah dikumpulkan.'#13#10'Semua pertanyaan telah terjawab.'#13#10'Anda menda'
+  +'pat pesan baru dari pengajar anda.'#13#10'Terdapat pesan baru dari pengajar'
+  +'.'#13#10'Tidak ada pemberitahuan yang penting.'#13#10'Masukkan password yan'
+  +'g diberikan oleh pengajar kelas yang bersangkutan.'#13#10'Password yang and'
+  +'a masukkan untuk kelas ini salah.'#13#10'Anda tidak tergabung dalam jaringa'
+  +'n komputer.'
+]);

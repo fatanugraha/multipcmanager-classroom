@@ -1,0 +1,99 @@
+object frmNewSession: TfrmNewSession
+  Left = 394
+  Height = 185
+  Top = 215
+  Width = 445
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Mulai Kelas - Informasi'
+  ClientHeight = 185
+  ClientWidth = 445
+  Color = 4210752
+  Font.Color = clBlack
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 29
+    Width = 79
+    Caption = 'Nama Kelas'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 17
+    Top = 61
+    Width = 106
+    Caption = 'Nama Pelajaran'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 17
+    Top = 93
+    Width = 105
+    Caption = 'Password Kelas'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox1: TComboBox
+    Left = 112
+    Height = 29
+    Top = 24
+    Width = 240
+    AutoComplete = True
+    AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactRetainPrefixCase, cbactSearchAscending]
+    Font.Color = clBlack
+    ItemHeight = 0
+    OnChange = ComboBox2Change
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ComboBox2: TComboBox
+    Left = 112
+    Height = 29
+    Top = 56
+    Width = 240
+    Font.Color = clBlack
+    ItemHeight = 0
+    OnChange = ComboBox2Change
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 27
+    Top = 88
+    Width = 240
+    Font.Color = clBlack
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 216
+    Height = 25
+    Top = 136
+    Width = 88
+    Caption = 'Mulai Kelas'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 128
+    Height = 25
+    Top = 136
+    Width = 82
+    Caption = 'Batal'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end

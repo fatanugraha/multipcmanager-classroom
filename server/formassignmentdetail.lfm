@@ -1,0 +1,185 @@
+object frmAssignmentDetail: TfrmAssignmentDetail
+  Left = 582
+  Height = 373
+  Top = 274
+  Width = 683
+  Caption = 'frmAssignmentDetail'
+  ClientHeight = 373
+  ClientWidth = 683
+  Color = 5197647
+  OnResize = FormResize
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 13
+    Height = 15
+    Top = 16
+    Width = 70
+    Caption = 'Nama Tugas:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 13
+    Height = 15
+    Top = 48
+    Width = 85
+    Caption = 'Deskripsi Tugas:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 88
+    Height = 15
+    Top = 16
+    Width = 34
+    Caption = 'Label3'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 13
+    Height = 56
+    Top = 72
+    Width = 654
+    Anchors = [akTop, akLeft, akRight]
+    Lines.Strings = (
+      'Memo1'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoHorizontal
+    TabOrder = 0
+  end
+  object Label4: TLabel
+    Left = 13
+    Height = 15
+    Top = 192
+    Width = 75
+    Caption = 'Total Submisi:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 96
+    Height = 15
+    Top = 192
+    Width = 34
+    Caption = 'Label5'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListView1: TListView
+    Left = 13
+    Height = 80
+    Top = 248
+    Width = 299
+    Anchors = [akTop, akLeft, akBottom]
+    AutoWidthLastColumn = True
+    Columns = <    
+      item
+        Caption = 'No.'
+        Width = 40
+      end    
+      item
+        Caption = 'Nama'
+        Width = 255
+      end>
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+    ViewStyle = vsReport
+  end
+  object Label6: TLabel
+    Left = 13
+    Height = 15
+    Top = 224
+    Width = 187
+    Caption = 'Daftar yang sudah mengumpulkan:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListView2: TListView
+    Left = 328
+    Height = 80
+    Top = 248
+    Width = 339
+    Anchors = [akTop, akLeft, akBottom]
+    AutoWidthLastColumn = True
+    Columns = <    
+      item
+        Caption = 'No.'
+        Width = 40
+      end    
+      item
+        Caption = 'Nama'
+        Width = 295
+      end>
+    ScrollBars = ssAutoBoth
+    TabOrder = 2
+    ViewStyle = vsReport
+  end
+  object Label7: TLabel
+    Left = 328
+    Height = 15
+    Top = 224
+    Width = 189
+    Caption = 'Daftar yang belum mengumpulkan:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 592
+    Height = 25
+    Top = 336
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Tutup'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Label8: TLabel
+    Left = 13
+    Height = 15
+    Top = 168
+    Width = 102
+    Caption = 'Besar maks. berkas:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 13
+    Height = 15
+    Top = 144
+    Width = 157
+    Caption = 'Tempat penyimpanan berkas:'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 120
+    Height = 15
+    Top = 168
+    Width = 40
+    Caption = 'Label10'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 176
+    Height = 15
+    Top = 144
+    Width = 40
+    Caption = 'Label11'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+end

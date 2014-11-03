@@ -1,0 +1,75 @@
+object frmworksdetail: Tfrmworksdetail
+  Left = 385
+  Height = 242
+  Top = 381
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'f'
+  ClientHeight = 242
+  ClientWidth = 320
+  Color = 5197647
+  Font.Color = clWhite
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 70
+    Caption = 'Nama tugas: '
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 40
+    Width = 50
+    Caption = 'Deskripsi:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 18
+    Height = 15
+    Top = 104
+    Width = 158
+    Caption = 'Ekstensi berkas yang diterima:'
+    ParentColor = False
+  end
+  object lblName: TLabel
+    Left = 88
+    Height = 15
+    Top = 16
+    Width = 45
+    Caption = 'lblName'
+    ParentColor = False
+  end
+  object lblDesc: TLabel
+    Left = 72
+    Height = 56
+    Top = 40
+    Width = 232
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'lblDesc'
+    ParentColor = False
+    WordWrap = True
+  end
+  object lblExt: TLabel
+    Left = 184
+    Height = 15
+    Top = 104
+    Width = 28
+    Caption = 'lblExt'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 232
+    Height = 25
+    Top = 208
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Tutup'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

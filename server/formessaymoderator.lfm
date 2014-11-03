@@ -1,0 +1,126 @@
+object frmEssayModerator: TfrmEssayModerator
+  Left = 587
+  Height = 378
+  Top = 210
+  Width = 680
+  Caption = 'frmEssayModerator'
+  ClientHeight = 378
+  ClientWidth = 680
+  Color = 5197647
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object ComboBox1: TComboBox
+    Left = 84
+    Height = 23
+    Top = 17
+    Width = 495
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 15
+    OnSelect = ComboBox1Select
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 336
+    Top = 42
+    Width = 680
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 336
+    ClientWidth = 680
+    TabOrder = 1
+    object lv: TListView
+      Left = 16
+      Height = 254
+      Top = 40
+      Width = 648
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoWidthLastColumn = True
+      Columns = <      
+        item
+          Caption = 'No.'
+        end      
+        item
+          Caption = 'Nama'
+          Width = 200
+        end      
+        item
+          Caption = 'Status Esai'
+          Width = 394
+        end>
+      ReadOnly = True
+      RowSelect = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+      ViewStyle = vsReport
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 15
+      Top = 16
+      Width = 78
+      Caption = 'Total Submisi: '
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+    object Button1: TButton
+      Left = 528
+      Height = 25
+      Top = 301
+      Width = 136
+      Anchors = [akRight, akBottom]
+      Caption = 'Koreksi Esai'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object pnlCover: TPanel
+      Left = 8
+      Height = 50
+      Top = 272
+      Width = 1
+      BevelOuter = bvNone
+      Caption = 'pnlCover'
+      Font.Color = clWhite
+      Font.Height = -16
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+    end
+    object Label3: TLabel
+      Left = 577
+      Height = 15
+      Top = 16
+      Width = 87
+      Alignment = taRightJustify
+      Anchors = [akTop, akRight]
+      Caption = 'Nilai Maximum: '
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Button2: TButton
+    Left = 584
+    Height = 25
+    Top = 16
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = 'Tutup'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 21
+    Width = 59
+    Caption = 'Nama Quiz'
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+  end
+end

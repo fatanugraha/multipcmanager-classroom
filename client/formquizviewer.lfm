@@ -1,0 +1,102 @@
+object frmQuizPreview: TfrmQuizPreview
+  Left = 248
+  Height = 465
+  Top = 92
+  Width = 805
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'frmQuizPreview'
+  ClientHeight = 465
+  ClientWidth = 805
+  Color = 5197647
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 433
+    Top = 32
+    Width = 805
+    HorzScrollBar.Page = 1
+    VertScrollBar.Increment = 0
+    VertScrollBar.Page = 1
+    VertScrollBar.Smooth = True
+    Align = alClient
+    BorderStyle = bsNone
+    TabOrder = 0
+  end
+  object pnlStatus: TPanel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 805
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 32
+    ClientWidth = 805
+    Color = 2960685
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 8
+      Height = 17
+      Top = 8
+      Width = 98
+      Caption = 'Waktu Tersisa:'
+      ParentColor = False
+    end
+    object lblTimeLeft: TLabel
+      Left = 88
+      Height = 1
+      Top = 8
+      Width = 1
+      ParentColor = False
+    end
+    object Button1: TButton
+      Left = 712
+      Height = 25
+      Top = 3
+      Width = 88
+      Anchors = [akTop, akRight]
+      Caption = 'Selesai'
+      Font.Color = clBlack
+      OnClick = Button1Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 604
+      Height = 25
+      Top = 3
+      Width = 107
+      Anchors = [akTop, akRight]
+      Caption = 'Cek Jawaban'
+      Font.Color = clBlack
+      OnClick = Button2Click
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object pnlWaitCover: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 1
+    BevelOuter = bvNone
+    Color = 2960685
+    Font.Color = clWhite
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+  end
+  object FTimer: TTimer
+    Enabled = False
+    OnTimer = FTimerTimer
+    left = 90
+    top = 93
+  end
+end
